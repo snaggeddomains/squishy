@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SomaSquish — A Monthly Box of Squishy Joy</title>
+  <meta name="description" content="SomaSquish is a monthly subscription box of 3–4 premium squishy toys for kids. Discovery, surprise & delight, and real savings — delivered every month. Made in South Orange, NJ." />
+
+  <!-- Favicon: cute squishy blob -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 12c22 0 35 16 35 38 0 18-10 24-10 32 0 4-50 4-50 0 0-8-10-14-10-32C15 28 28 12 50 12z' fill='%23F0A39A' stroke='%232B2017' stroke-width='5'/%3E%3Ccircle cx='38' cy='48' r='5' fill='%232B2017'/%3E%3Ccircle cx='62' cy='48' r='5' fill='%232B2017'/%3E%3Cpath d='M42 60q8 7 16 0' stroke='%232B2017' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announcement">
+    <div class="marquee">
+      <span>🎁 New subscriber boxes ship monthly</span>
+      <span>✨ 3–4 premium squishies every box</span>
+      <span>💛 1% of every box supports Isaiah House</span>
+      <span>🚗 Free local pickup in South Orange &amp; Maplewood</span>
+      <span>🎁 New subscriber boxes ship monthly</span>
+      <span>✨ 3–4 premium squishies every box</span>
+      <span>💛 1% of every box supports Isaiah House</span>
+      <span>🚗 Free local pickup in South Orange &amp; Maplewood</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="SomaSquish home">
+        <img src="public/SOMASquish_logo.jpg" alt="SomaSquish" class="brand-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';" />
+        <span class="brand-wordmark" style="display:none;" aria-hidden="true">
+          <b style="color:var(--red)">S</b><b style="color:var(--orange)">o</b><b style="color:var(--yellow)">m</b><b style="color:var(--green)">a</b><b style="color:var(--teal)">S</b><b style="color:var(--purple)">q</b><b style="color:var(--red)">u</b><b style="color:var(--orange)">i</b><b style="color:var(--green)">s</b><b style="color:var(--teal)">h</b>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#inside">What's inside</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#founders">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="#pricing" class="btn btn-primary btn-sm header-cta">Get the box</a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a href="#how">How it works</a>
+      <a href="#inside">What's inside</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#founders">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#pricing" class="btn btn-primary">Get the box</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="sunburst" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">A monthly squishy subscription · South Orange, NJ</span>
+          <h1>So much squish,<br />delivered to your door.</h1>
+          <p class="lede">
+            Every month we curate <strong>3–4 premium squishy &amp; sensory toys</strong> from the
+            brands kids love — packed into one joyful surprise box. Discovery, delight,
+            and real savings vs. buying them one-at-a-time at the checkout counter.
+          </p>
+          <div class="hero-cta">
+            <a href="#pricing" class="btn btn-primary btn-lg">Start a subscription</a>
+            <a href="#inside" class="btn btn-ghost btn-lg">See what's inside</a>
+          </div>
+          <div class="hero-trust">
+            <span class="price-chip">$35<span>/mo</span></span>
+            <span class="trust-text">3–4 premium squishies · cancel anytime · ships monthly</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Cute squishy mascot (inline SVG so it always renders) -->
+          <div class="mascot-card">
+            <svg class="mascot" viewBox="0 0 220 200" role="img" aria-label="Smiling squishy character">
+              <path d="M110 18c46 0 74 32 74 80 0 36-20 50-20 66 0 10-108 10-108 0 0-16-20-30-20-66 0-48 28-80 74-80z" fill="#F0A39A" stroke="#2B2017" stroke-width="7"/>
+              <ellipse cx="80" cy="56" rx="20" ry="13" fill="#fff" opacity="0.45"/>
+              <circle cx="82" cy="96" r="9" fill="#2B2017"/>
+              <circle cx="138" cy="96" r="9" fill="#2B2017"/>
+              <circle cx="85" cy="93" r="3" fill="#fff"/>
+              <circle cx="141" cy="93" r="3" fill="#fff"/>
+              <circle cx="62" cy="116" r="9" fill="#E8857A" opacity="0.7"/>
+              <circle cx="158" cy="116" r="9" fill="#E8857A" opacity="0.7"/>
+              <path d="M92 116q18 16 36 0" stroke="#2B2017" stroke-width="6" fill="none" stroke-linecap="round"/>
+            </svg>
+            <div class="mascot-blobs" aria-hidden="true">
+              <span class="blob b1"></span>
+              <span class="blob b2"></span>
+              <span class="blob b3"></span>
+              <span class="blob b4"></span>
+            </div>
+          </div>
+          <div class="value-bubble">
+            <span class="big">$35+</span>
+            <span class="small">retail value, curated</span>
+          </div>
+        </div>
+      </div>
+      <div class="wave wave-top" aria-hidden="true"></div>
+    </section>
+
+    <!-- Three angles -->
+    <section class="angles" aria-label="Why SomaSquish">
+      <div class="container angle-grid">
+        <article class="angle-card a-discovery">
+          <div class="angle-icon">🔍</div>
+          <h3>Discovery</h3>
+          <p>A hand-picked mix of new releases, viral favorites, and hidden-gem brands you won't find on one shelf.</p>
+        </article>
+        <article class="angle-card a-delight">
+          <div class="angle-icon">🎉</div>
+          <h3>Surprise &amp; Delight</h3>
+          <p>Every box is a mystery reveal — that unboxing dopamine kids (and parents) can't get enough of.</p>
+        </article>
+        <article class="angle-card a-savings">
+          <div class="angle-icon">💸</div>
+          <h3>Real Savings</h3>
+          <p>Premium squishies run $10–$20 each at the register. We bundle 3–4 into one box for less.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how" id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2>Squish in three easy steps</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Pick your plan</h3>
+            <p>Go month-to-month or prepay 3, 6, or 12 months to save up to 30%. Ship it or grab it locally.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>We curate &amp; pack</h3>
+            <p>Each month our tiny-but-mighty crew assembles a themed box of 3–4 premium, safety-checked squishies.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Squish, share, repeat</h3>
+            <p>Open the surprise, squeeze away, and start your collection. A fresh box lands every month.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's inside / brands -->
+    <section class="inside" id="inside">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What's inside</span>
+          <h2>The good squishies. Not the junk-drawer kind.</h2>
+          <p class="section-sub">
+            We curate from the premium brands kids actually ask for — sensory-safe, satisfying,
+            and built to last. A typical box mixes squish, stretch, and fidget.
+          </p>
+        </div>
+
+        <div class="brand-grid">
+          <div class="brand-pill">NeeDoh</div>
+          <div class="brand-pill">Squishmallows</div>
+          <div class="brand-pill">Jellycat</div>
+          <div class="brand-pill">Crazy Aaron's</div>
+          <div class="brand-pill">Orb Soft'n Slo</div>
+          <div class="brand-pill">Schylling</div>
+          <div class="brand-pill">Tangle</div>
+          <div class="brand-pill">Squish-Dee-Lish</div>
+        </div>
+
+        <div class="box-contents">
+          <div class="content-card">
+            <div class="content-emoji">🫧</div>
+            <h4>Squish heroes</h4>
+            <p>1–2 standout squishies — the satisfying, slow-rise kind that feels premium.</p>
+          </div>
+          <div class="content-card">
+            <div class="content-emoji">🧠</div>
+            <h4>Sensory &amp; fidget</h4>
+            <p>A calming sensory or fidget piece — great for focus, anxiety, and the classroom.</p>
+          </div>
+          <div class="content-card">
+            <div class="content-emoji">⭐</div>
+            <h4>Surprise insert</h4>
+            <p>A collectible card, sticker, or "golden squish" rare — a little extra reveal every month.</p>
+          </div>
+        </div>
+        <p class="fine-print">Brands shown are illustrative of the categories we curate from for this proof of concept.</p>
+      </div>
+    </section>
+
+    <!-- Limited drops teaser -->
+    <section class="drops" aria-label="Limited drops">
+      <div class="container">
+        <div class="section-head light">
+          <span class="eyebrow">Coming soon</span>
+          <h2>Limited themed drops</h2>
+          <p class="section-sub">Special boxes that sell out fast. Subscribers get first dibs.</p>
+        </div>
+        <div class="drop-row">
+          <div class="drop-card d1"><span class="drop-tag">Summer</span><h4>Summer Melt Box</h4></div>
+          <div class="drop-card d2"><span class="drop-tag">Space</span><h4>Galaxy Goo Drop</h4></div>
+          <div class="drop-card d3"><span class="drop-tag">Retro</span><h4>Retro Gross Pack</h4></div>
+          <div class="drop-card d4"><span class="drop-tag">Rare</span><h4>Ultra Glow Box</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing</span>
+          <h2>Pick your squish plan</h2>
+          <p class="section-sub">All plans include 3–4 premium squishies per month. Prepay to save — cancel anytime on monthly.</p>
+        </div>
+
+        <div class="delivery-toggle" role="group" aria-label="Delivery method">
+          <button class="toggle-btn active" data-mode="ship">🚚 Ship to me</button>
+          <button class="toggle-btn" data-mode="pickup">🚗 Local pickup <span class="save-flag">save $5/mo</span></button>
+        </div>
+
+        <div class="plan-grid" id="planGrid">
+          <!-- Cards rendered by script.js -->
+        </div>
+
+        <p class="fine-print">
+          Local pickup available for South Orange &amp; Maplewood families at scheduled SOMA pickup events.
+          Prepay plans are billed once up front. Proof-of-concept pricing — checkout not yet live.
+        </p>
+      </div>
+    </section>
+
+    <!-- Birthday party packs -->
+    <section class="parties" aria-label="Birthday party packs">
+      <div class="container party-inner">
+        <div class="party-copy">
+          <span class="eyebrow">Also available</span>
+          <h2>Birthday party &amp; loot-bag packs</h2>
+          <p>Throwing a squish-themed party? We build custom bulk packs of mini squishies with themed labels and loot bags. Perfect for classrooms, team treats, and goodie bags.</p>
+          <a href="#waitlist" class="btn btn-primary">Ask about party packs</a>
+        </div>
+        <div class="party-visual" aria-hidden="true">
+          <span class="party-emoji e1">🎈</span>
+          <span class="party-emoji e2">🎁</span>
+          <span class="party-emoji e3">🧁</span>
+          <span class="party-emoji e4">🫧</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the founders -->
+    <section class="founders" id="founders">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">About the founders</span>
+          <h2>Two third graders with a big squishy dream</h2>
+          <p class="section-sub">
+            SomaSquish was dreamed up by <strong>Ryan Schutz</strong> and <strong>Ethan Greenberg</strong>,
+            third graders at Marshall School in South Orange, NJ — brought together by a shared love of
+            squishy toys and the Baltimore Orioles.
+          </p>
+        </div>
+
+        <div class="founder-layout">
+          <div class="founder-photo">
+            <img src="public/ethan_ryan.jpeg" alt="Ethan and Ryan, founders of SomaSquish"
+                 onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');" />
+            <div class="photo-fallback">
+              <span>📸</span>
+              <p>Founder photo<br /><code>public/ethan_ryan.jpeg</code></p>
+            </div>
+          </div>
+
+          <div class="founder-bios">
+            <article class="bio-card">
+              <div class="bio-badge">⚾</div>
+              <h3>Ryan Schutz</h3>
+              <p class="bio-role">Co-Founder · Chief Squish Curator</p>
+              <p>Knows a premium squishy from a dollar-store dud at ten paces. Dreams in orange &amp; black and believes every box should feel like a birthday.</p>
+            </article>
+            <article class="bio-card">
+              <div class="bio-badge">🫧</div>
+              <h3>Ethan Greenberg</h3>
+              <p class="bio-role">Co-Founder · Head of Surprise &amp; Delight</p>
+              <p>The unboxing expert. Tests every squish for maximum satisfaction and makes sure no two boxes feel the same.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Photo strip -->
+        <div class="founder-strip">
+          <img src="public/ER6.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ER7.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ethan_ryan2.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ethan_ryan3.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ethan_ryan5.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Charity -->
+    <section class="charity" aria-label="Giving back">
+      <div class="container charity-inner">
+        <div class="charity-badge">💛</div>
+        <div class="charity-copy">
+          <h2>1% of every box supports Isaiah House</h2>
+          <p>We're a South Orange company at heart. A portion of every SomaSquish box helps fund support for local children and families in need — squishy joy that gives back.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist / email capture -->
+    <section class="waitlist" id="waitlist">
+      <div class="container">
+        <div class="waitlist-card">
+          <div class="sunburst small" aria-hidden="true"></div>
+          <h2>Join the pilot 🎉</h2>
+          <p>We're opening SomaSquish to our first 100 families. Drop your email and we'll save you a spot in the very first box.</p>
+          <form class="waitlist-form" id="waitlistForm" novalidate>
+            <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
+            <button type="submit" class="btn btn-primary">Save my spot</button>
+          </form>
+          <p class="form-note" id="formNote" hidden>🙌 You're on the list! We'll be in touch soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, answered</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What's actually in a box?</summary>
+            <p>Each month you get 3–4 premium squishy and sensory toys plus a surprise insert (a collectible, sticker, or rare "golden squish"). Boxes are loosely themed and curated for ages 4+.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How much does it cost?</summary>
+            <p>$35/month month-to-month. Prepay to save: 10% off for 3 months, 20% off for 6 months, and 30% off for 12 months. Local pickup saves an extra $5/month.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I cancel anytime?</summary>
+            <p>Yes — month-to-month plans can be paused or cancelled anytime. Prepaid plans run for the term you choose and then renew monthly.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you ship, or is it local pickup?</summary>
+            <p>Both! We ship nationwide, and South Orange &amp; Maplewood families can choose free local pickup at scheduled SOMA pickup events to save $5/month.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Are the toys safe?</summary>
+            <p>We curate from established, parent-trusted brands and only include sensory-safe items. Boxes are recommended for ages 4+.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Who's behind SomaSquish?</summary>
+            <p>Two third graders from Marshall School in South Orange — Ryan Schutz and Ethan Greenberg — united by squishy toys and the Baltimore Orioles. (With a little grown-up help on the shipping.)</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-wordmark small">
+          <b style="color:#FBEFD3">S</b><b style="color:#F0B429">o</b><b style="color:#E98B2E">m</b><b style="color:#6FA84B">a</b><b style="color:#2E9FB0">S</b><b style="color:#C98BD0">q</b><b style="color:#FBEFD3">u</b><b style="color:#F0B429">i</b><b style="color:#6FA84B">s</b><b style="color:#2E9FB0">h</b>
+        </span>
+        <p>A monthly box of squishy joy.<br />Made with love in South Orange, NJ.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#how">How it works</a>
+        <a href="#inside">What's inside</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#founders">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="footer-meta">
+        <p>© <span id="year"></span> SomaSquish. Proof of concept.</p>
+        <p class="muted">1% of every box supports Isaiah House.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
