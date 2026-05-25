@@ -127,7 +127,7 @@ img { max-width: 100%; display: block; }
   padding: 12px 0;
 }
 .brand { display: inline-flex; align-items: center; }
-.brand-logo { height: 46px; width: auto; }
+.brand-logo { height: 54px; width: auto; }
 .brand-wordmark {
   font-family: var(--font-head);
   font-weight: 700;
