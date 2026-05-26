@@ -6,29 +6,27 @@
   <title>SomaSquish — A Monthly Box of Squishy Joy</title>
   <meta name="description" content="SomaSquish is a monthly subscription box of 3–4 premium squishy toys for kids. Discovery, surprise & delight, and real savings — delivered every month. Made in South Orange, NJ." />
 
-  <!-- Favicon: cute squishy blob -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 12c22 0 35 16 35 38 0 18-10 24-10 32 0 4-50 4-50 0 0-8-10-14-10-32C15 28 28 12 50 12z' fill='%23F0A39A' stroke='%232B2017' stroke-width='5'/%3E%3Ccircle cx='38' cy='48' r='5' fill='%232B2017'/%3E%3Ccircle cx='62' cy='48' r='5' fill='%232B2017'/%3E%3Cpath d='M42 60q8 7 16 0' stroke='%232B2017' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 12c22 0 35 16 35 38 0 18-10 24-10 32 0 4-50 4-50 0 0-8-10-14-10-32C15 28 28 12 50 12z' fill='%23F0A39A' stroke='%232A1E16' stroke-width='5'/%3E%3Ccircle cx='38' cy='48' r='5' fill='%232A1E16'/%3E%3Ccircle cx='62' cy='48' r='5' fill='%232A1E16'/%3E%3Cpath d='M42 60q8 7 16 0' stroke='%232A1E16' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Announcement bar -->
+  <!-- Announcement marquee -->
   <div class="announcement">
     <div class="marquee">
-      <span>🎁 New subscriber boxes ship monthly</span>
-      <span>✨ 3–4 premium squishies every box</span>
-      <span>💛 1% of every box supports Isaiah House</span>
-      <span>🚗 Free local pickup in South Orange &amp; Maplewood</span>
-      <span>🎁 New subscriber boxes ship monthly</span>
-      <span>✨ 3–4 premium squishies every box</span>
-      <span>💛 1% of every box supports Isaiah House</span>
-      <span>🚗 Free local pickup in South Orange &amp; Maplewood</span>
+      <span>🎁 New subscriber boxes ship monthly</span><span class="dot">●</span>
+      <span>✨ 3–4 premium squishies every box</span><span class="dot">●</span>
+      <span>💛 1% supports Isaiah House</span><span class="dot">●</span>
+      <span>🚗 Free local pickup in SOMA &amp; Maplewood</span><span class="dot">●</span>
+      <span>🎁 New subscriber boxes ship monthly</span><span class="dot">●</span>
+      <span>✨ 3–4 premium squishies every box</span><span class="dot">●</span>
+      <span>💛 1% supports Isaiah House</span><span class="dot">●</span>
+      <span>🚗 Free local pickup in SOMA &amp; Maplewood</span><span class="dot">●</span>
     </div>
   </div>
 
@@ -36,9 +34,8 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="SomaSquish home">
-        <img src="public/SOMASquish_logo.jpg" alt="SomaSquish" class="brand-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';" />
-        <span class="brand-wordmark" style="display:none;" aria-hidden="true">
-          <b style="color:var(--red)">S</b><b style="color:var(--orange)">o</b><b style="color:var(--yellow)">m</b><b style="color:var(--green)">a</b><b style="color:var(--teal)">S</b><b style="color:var(--purple)">q</b><b style="color:var(--red)">u</b><b style="color:var(--orange)">i</b><b style="color:var(--green)">s</b><b style="color:var(--teal)">h</b>
+        <span class="brand-wordmark">
+          <b class="c-red">S</b><b class="c-orange">o</b><b class="c-yellow">m</b><b class="c-green">a</b><b class="c-teal">S</b><b class="c-blue">q</b><b class="c-purple">u</b><b class="c-red">i</b><b class="c-orange">s</b><b class="c-green">h</b>
         </span>
       </a>
 
@@ -69,54 +66,52 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="sunburst" aria-hidden="true"></div>
+      <div class="hero-rainbow" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <div class="hero-copy">
-          <span class="eyebrow">A monthly squishy subscription · South Orange, NJ</span>
-          <h1>So much squish,<br />delivered to your door.</h1>
-          <p class="lede">
-            Every month we curate <strong>3–4 premium squishy &amp; sensory toys</strong> from the
-            brands kids love — packed into one joyful surprise box. Discovery, delight,
-            and real savings vs. buying them one-at-a-time at the checkout counter.
-          </p>
-          <div class="hero-cta">
-            <a href="#pricing" class="btn btn-primary btn-lg">Start a subscription</a>
-            <a href="#inside" class="btn btn-ghost btn-lg">See what's inside</a>
-          </div>
-          <div class="hero-trust">
-            <span class="price-chip">$35<span>/mo</span></span>
-            <span class="trust-text">3–4 premium squishies · cancel anytime · ships monthly</span>
-          </div>
+        <span class="eyebrow">A monthly squishy subscription · South Orange, NJ</span>
+
+        <div class="hero-stage">
+          <figure class="hero-logo-card">
+            <img src="public/SOMASquish_logo.jpg" alt="SomaSquish — so much squish"
+                 onerror="this.closest('.hero-logo-card').classList.add('logo-missing');" />
+          </figure>
+
+          <span class="squish-bubble sb1">
+            <img src="public/P7.png" alt="Kawaii dumpling squishies" loading="lazy"
+                 onerror="this.closest('.squish-bubble').style.display='none';" />
+          </span>
+          <span class="squish-bubble sb2">
+            <img src="public/P6.png" alt="Marble swirl squishy cubes" loading="lazy"
+                 onerror="this.closest('.squish-bubble').style.display='none';" />
+          </span>
+          <span class="squish-bubble sb3">
+            <img src="public/P1.png" alt="Ice cream cone squishies" loading="lazy"
+                 onerror="this.closest('.squish-bubble').style.display='none';" />
+          </span>
+          <span class="squish-bubble sb4">
+            <img src="public/P4.png" alt="Glitter squishy" loading="lazy"
+                 onerror="this.closest('.squish-bubble').style.display='none';" />
+          </span>
+
+          <span class="burst hero-burst"><b>$35</b><i>+ value</i></span>
         </div>
 
-        <div class="hero-visual">
-          <!-- Cute squishy mascot (inline SVG so it always renders) -->
-          <div class="mascot-card">
-            <svg class="mascot" viewBox="0 0 220 200" role="img" aria-label="Smiling squishy character">
-              <path d="M110 18c46 0 74 32 74 80 0 36-20 50-20 66 0 10-108 10-108 0 0-16-20-30-20-66 0-48 28-80 74-80z" fill="#F0A39A" stroke="#2B2017" stroke-width="7"/>
-              <ellipse cx="80" cy="56" rx="20" ry="13" fill="#fff" opacity="0.45"/>
-              <circle cx="82" cy="96" r="9" fill="#2B2017"/>
-              <circle cx="138" cy="96" r="9" fill="#2B2017"/>
-              <circle cx="85" cy="93" r="3" fill="#fff"/>
-              <circle cx="141" cy="93" r="3" fill="#fff"/>
-              <circle cx="62" cy="116" r="9" fill="#E8857A" opacity="0.7"/>
-              <circle cx="158" cy="116" r="9" fill="#E8857A" opacity="0.7"/>
-              <path d="M92 116q18 16 36 0" stroke="#2B2017" stroke-width="6" fill="none" stroke-linecap="round"/>
-            </svg>
-            <div class="mascot-blobs" aria-hidden="true">
-              <span class="blob b1"></span>
-              <span class="blob b2"></span>
-              <span class="blob b3"></span>
-              <span class="blob b4"></span>
-            </div>
-          </div>
-          <div class="value-bubble">
-            <span class="big">$35+</span>
-            <span class="small">retail value, curated</span>
-          </div>
+        <h1 class="hero-tagline">So much squish,<br />delivered.</h1>
+        <p class="lede">
+          Every month we curate <strong>3–4 premium squishy &amp; sensory toys</strong> from the
+          brands kids love — one joyful surprise box of discovery, delight, and real savings.
+        </p>
+        <div class="hero-cta">
+          <a href="#pricing" class="btn btn-primary btn-lg">Start a subscription</a>
+          <a href="#inside" class="btn btn-ghost btn-lg">See what's inside</a>
+        </div>
+        <div class="hero-trust">
+          <span class="price-chip">$35<span>/mo</span></span>
+          <span class="trust-text">3–4 premium squishies · cancel anytime · ships monthly</span>
         </div>
       </div>
-      <div class="wave wave-top" aria-hidden="true"></div>
+      <div class="divider divider-scallop" aria-hidden="true"></div>
     </section>
 
     <!-- Three angles -->
@@ -151,7 +146,7 @@
           <div class="step">
             <div class="step-num">1</div>
             <h3>Pick your plan</h3>
-            <p>Go month-to-month or prepay 3, 6, or 12 months to save up to 30%. Ship it or grab it locally.</p>
+            <p>Go month-to-month or prepay 3 or 6 months to save up to 20%. Ship it or grab it locally.</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
@@ -167,7 +162,10 @@
       </div>
     </section>
 
-    <!-- What's inside / brands -->
+    <!-- Rainbow stripe divider -->
+    <div class="stripe-divider" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+    <!-- What's inside / brands / gallery -->
     <section class="inside" id="inside">
       <div class="container">
         <div class="section-head">
@@ -214,41 +212,40 @@
         </div>
         <div class="product-gallery">
           <figure class="product-card feature">
-            <img src="public/P1.png" alt="Featured squishy toy" loading="lazy"
+            <img src="public/P6.png" alt="Marble swirl squishy cubes" loading="lazy"
                  onerror="this.closest('.product-card').classList.add('img-missing');" />
             <figcaption>This month's hero squish</figcaption>
           </figure>
           <figure class="product-card">
-            <img src="public/P2.png" alt="Squishy toy" loading="lazy"
+            <img src="public/P7.png" alt="Kawaii dumpling squishies" loading="lazy"
                  onerror="this.closest('.product-card').classList.add('img-missing');" />
           </figure>
           <figure class="product-card">
-            <img src="public/P3.png" alt="Squishy toy" loading="lazy"
+            <img src="public/P1.png" alt="Ice cream cone squishies" loading="lazy"
                  onerror="this.closest('.product-card').classList.add('img-missing');" />
           </figure>
           <figure class="product-card">
-            <img src="public/P4.png" alt="Squishy toy" loading="lazy"
+            <img src="public/P4.png" alt="Glitter squishy" loading="lazy"
                  onerror="this.closest('.product-card').classList.add('img-missing');" />
           </figure>
           <figure class="product-card">
-            <img src="public/P5.png" alt="Squishy toy" loading="lazy"
+            <img src="public/P2.png" alt="NeeDoh ice cube squishy" loading="lazy"
                  onerror="this.closest('.product-card').classList.add('img-missing');" />
           </figure>
           <figure class="product-card">
-            <img src="public/P6.png" alt="Squishy toy" loading="lazy"
+            <img src="public/P5.png" alt="Salted butter squishy" loading="lazy"
                  onerror="this.closest('.product-card').classList.add('img-missing');" />
           </figure>
           <figure class="product-card">
-            <img src="public/P7.png" alt="Squishy toy" loading="lazy"
+            <img src="public/P3.png" alt="Textured stress squishy" loading="lazy"
                  onerror="this.closest('.product-card').classList.add('img-missing');" />
           </figure>
         </div>
-
         <p class="fine-print">Product photos &amp; brands shown are illustrative of the categories we curate from for this proof of concept.</p>
       </div>
     </section>
 
-    <!-- Limited drops teaser -->
+    <!-- Limited drops -->
     <section class="drops" aria-label="Limited drops">
       <div class="container">
         <div class="section-head light">
@@ -257,10 +254,30 @@
           <p class="section-sub">Special boxes that sell out fast. Subscribers get first dibs.</p>
         </div>
         <div class="drop-row">
-          <div class="drop-card d1"><span class="drop-tag">Summer</span><h4>Summer Melt Box</h4></div>
-          <div class="drop-card d2"><span class="drop-tag">Space</span><h4>Galaxy Goo Drop</h4></div>
-          <div class="drop-card d3"><span class="drop-tag">Retro</span><h4>Retro Gross Pack</h4></div>
-          <div class="drop-card d4"><span class="drop-tag">Rare</span><h4>Ultra Glow Box</h4></div>
+          <article class="drop-card">
+            <img src="public/P1.png" alt="Summer Melt Box squishies" loading="lazy"
+                 onerror="this.closest('.drop-card').classList.add('img-missing');" />
+            <div class="drop-shade tint-orange"></div>
+            <div class="drop-text"><span class="drop-tag">Summer</span><h4>Summer Melt Box</h4></div>
+          </article>
+          <article class="drop-card">
+            <img src="public/P4.png" alt="Galaxy Goo Drop squishy" loading="lazy"
+                 onerror="this.closest('.drop-card').classList.add('img-missing');" />
+            <div class="drop-shade tint-purple"></div>
+            <div class="drop-text"><span class="drop-tag">Space</span><h4>Galaxy Goo Drop</h4></div>
+          </article>
+          <article class="drop-card">
+            <img src="public/P5.png" alt="Retro Gross Pack squishy" loading="lazy"
+                 onerror="this.closest('.drop-card').classList.add('img-missing');" />
+            <div class="drop-shade tint-green"></div>
+            <div class="drop-text"><span class="drop-tag">Retro</span><h4>Retro Gross Pack</h4></div>
+          </article>
+          <article class="drop-card">
+            <img src="public/P2.png" alt="Ultra Glow Box squishy" loading="lazy"
+                 onerror="this.closest('.drop-card').classList.add('img-missing');" />
+            <div class="drop-shade tint-teal"></div>
+            <div class="drop-text"><span class="drop-tag">Rare</span><h4>Ultra Glow Box</h4></div>
+          </article>
         </div>
       </div>
     </section>
@@ -279,9 +296,7 @@
           <button class="toggle-btn" data-mode="pickup">🚗 Local pickup <span class="save-flag">save $5/mo</span></button>
         </div>
 
-        <div class="plan-grid" id="planGrid">
-          <!-- Cards rendered by script.js -->
-        </div>
+        <div class="plan-grid" id="planGrid"></div>
 
         <p class="fine-print">
           Local pickup available for South Orange &amp; Maplewood families at scheduled SOMA pickup events.
@@ -299,16 +314,24 @@
           <p>Throwing a squish-themed party? We build custom bulk packs of mini squishies with themed labels and loot bags. Perfect for classrooms, team treats, and goodie bags.</p>
           <a href="#waitlist" class="btn btn-primary">Ask about party packs</a>
         </div>
-        <div class="party-visual" aria-hidden="true">
-          <span class="party-emoji e1">🎈</span>
-          <span class="party-emoji e2">🎁</span>
-          <span class="party-emoji e3">🧁</span>
-          <span class="party-emoji e4">🫧</span>
+        <div class="party-visual">
+          <div class="confetti" aria-hidden="true"></div>
+          <div class="party-grid">
+            <img src="public/P7.png" alt="Kawaii dumpling squishies" loading="lazy"
+                 onerror="this.classList.add('cell-missing');" />
+            <img src="public/P6.png" alt="Marble swirl squishy cubes" loading="lazy"
+                 onerror="this.classList.add('cell-missing');" />
+            <img src="public/P1.png" alt="Ice cream cone squishies" loading="lazy"
+                 onerror="this.classList.add('cell-missing');" />
+            <img src="public/P3.png" alt="Textured stress squishy" loading="lazy"
+                 onerror="this.classList.add('cell-missing');" />
+          </div>
+          <span class="burst party-burst"><b>20+</b><i>minis / pack</i></span>
         </div>
       </div>
     </section>
 
-    <!-- About the founders -->
+    <!-- Founders -->
     <section class="founders" id="founders">
       <div class="container">
         <div class="section-head">
@@ -347,13 +370,12 @@
           </div>
         </div>
 
-        <!-- Photo strip -->
         <div class="founder-strip">
-          <img src="public/ER6.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
-          <img src="public/ER7.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
-          <img src="public/ethan_ryan2.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
-          <img src="public/ethan_ryan3.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
-          <img src="public/ethan_ryan5.jpeg" alt="Ethan and Ryan" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ER6.jpeg" alt="Ethan and Ryan" loading="lazy" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ER7.jpeg" alt="Ethan and Ryan" loading="lazy" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ethan_ryan2.jpeg" alt="Ethan and Ryan" loading="lazy" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ethan_ryan3.jpeg" alt="Ethan and Ryan" loading="lazy" onerror="this.classList.add('strip-missing');" />
+          <img src="public/ethan_ryan5.jpeg" alt="Ethan and Ryan" loading="lazy" onerror="this.classList.add('strip-missing');" />
         </div>
       </div>
     </section>
@@ -361,19 +383,24 @@
     <!-- Charity -->
     <section class="charity" aria-label="Giving back">
       <div class="container charity-inner">
-        <div class="charity-badge">💛</div>
+        <div class="charity-badge">
+          <a href="https://isaiahhouse.org" target="_blank" rel="noopener" aria-label="Isaiah House">
+            <img src="public/IH_logo.jpg" alt="Isaiah House logo"
+                 onerror="this.closest('.charity-badge').classList.add('logo-missing');" />
+          </a>
+        </div>
         <div class="charity-copy">
-          <h2>1% of every box supports Isaiah House</h2>
-          <p>We're a South Orange company at heart. A portion of every SomaSquish box helps fund support for local children and families in need — squishy joy that gives back.</p>
+          <h2>1% of every box supports <a href="https://isaiahhouse.org" target="_blank" rel="noopener">Isaiah House</a></h2>
+          <p>We're a South Orange company at heart. A portion of every SomaSquish box helps fund support for local children and families in need — squishy joy that gives back. <a class="charity-link" href="https://isaiahhouse.org" target="_blank" rel="noopener">Learn more at IsaiahHouse.org →</a></p>
         </div>
       </div>
     </section>
 
-    <!-- Waitlist / email capture -->
+    <!-- Waitlist -->
     <section class="waitlist" id="waitlist">
       <div class="container">
         <div class="waitlist-card">
-          <div class="sunburst small" aria-hidden="true"></div>
+          <div class="hero-rainbow small" aria-hidden="true"></div>
           <h2>Join the pilot 🎉</h2>
           <p>We're opening SomaSquish to our first 100 families. Drop your email and we'll save you a spot in the very first box.</p>
           <form class="waitlist-form" id="waitlistForm" novalidate>
@@ -399,7 +426,7 @@
           </details>
           <details class="faq-item">
             <summary>How much does it cost?</summary>
-            <p>$35/month month-to-month. Prepay to save: 10% off for 3 months, 20% off for 6 months, and 30% off for 12 months. Local pickup saves an extra $5/month.</p>
+            <p>$35/month month-to-month. Prepay to save: 10% off for 3 months and 20% off for 6 months. Local pickup saves an extra $5/month.</p>
           </details>
           <details class="faq-item">
             <summary>Can I cancel anytime?</summary>
@@ -427,7 +454,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="brand-wordmark small">
-          <b style="color:#FBEFD3">S</b><b style="color:#F0B429">o</b><b style="color:#E98B2E">m</b><b style="color:#6FA84B">a</b><b style="color:#2E9FB0">S</b><b style="color:#C98BD0">q</b><b style="color:#FBEFD3">u</b><b style="color:#F0B429">i</b><b style="color:#6FA84B">s</b><b style="color:#2E9FB0">h</b>
+          <b class="c-cream">S</b><b class="c-yellow">o</b><b class="c-orange">m</b><b class="c-green">a</b><b class="c-teal">S</b><b class="c-pink">q</b><b class="c-cream">u</b><b class="c-yellow">i</b><b class="c-green">s</b><b class="c-teal">h</b>
         </span>
         <p>A monthly box of squishy joy.<br />Made with love in South Orange, NJ.</p>
       </div>
@@ -440,7 +467,7 @@
       </nav>
       <div class="footer-meta">
         <p>© <span id="year"></span> SomaSquish. Proof of concept.</p>
-        <p class="muted">1% of every box supports Isaiah House.</p>
+        <p class="muted">1% of every box supports <a href="https://isaiahhouse.org" target="_blank" rel="noopener">Isaiah House</a>.</p>
       </div>
     </div>
   </footer>

@@ -6,8 +6,7 @@
 const PLANS = [
   { name: 'Monthly',   months: 1,  discount: 0,    badge: null,           note: 'Cancel anytime' },
   { name: '3 Months',  months: 3,  discount: 0.10, badge: null,           note: 'Prepaid' },
-  { name: '6 Months',  months: 6,  discount: 0.20, badge: 'Most popular', note: 'Prepaid' },
-  { name: '12 Months', months: 12, discount: 0.30, badge: 'Best value',   note: 'Prepaid' },
+  { name: '6 Months',  months: 6,  discount: 0.20, badge: 'Best value',   note: 'Prepaid' },
 ];
 
 const BASE = { ship: 35, pickup: 30 };
