@@ -423,8 +423,10 @@ img { max-width: 100%; display: block; }
   .plan-grid { grid-template-columns: 1fr; }
   .drop-row { grid-template-columns: 1fr; }
   .founder-strip { grid-template-columns: repeat(2, 1fr); }
+  .founder-strip img:nth-child(5) { display: none; }
   .waitlist-form input { min-width: 0; width: 100%; }
-  .delivery-toggle { flex-direction: column; left: 0; transform: none; width: 100%; }
+  .delivery-toggle { flex-direction: column; left: 0; transform: none; width: 100%; border-radius: 20px; }
+  .toggle-btn { justify-content: center; border-radius: 14px; }
   .value-callout { flex-direction: column; gap: 6px; }
   .value-callout .vc-divider { display: none; }
 }
