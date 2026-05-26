@@ -400,6 +400,10 @@ img { max-width: 100%; display: block; }
   .sb1 { top: -26px; left: -26px; } .sb2 { top: -22px; right: -28px; }
   .sb3, .sb4 { display: none; }
   .plan-grid { grid-template-columns: 1fr; }
+  .hero { padding: 34px 0 56px; }
+  .angles, .how, .inside, .pricing, .parties, .founders, .waitlist, .faq { padding-top: 42px; padding-bottom: 42px; }
+  .charity { padding-top: 38px; padding-bottom: 38px; }
+  .section-head { margin-bottom: 28px; }
 }
 @media (max-width: 560px) {
   .plan-grid { grid-template-columns: 1fr; }
