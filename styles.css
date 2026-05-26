@@ -162,7 +162,7 @@ img { max-width: 100%; display: block; }
   background-image: radial-gradient(var(--ink) 0.5px, transparent 0.7px); background-size: 20px 20px; opacity: .05; }
 .hero-inner { position: relative; z-index: 1; text-align: center; max-width: 780px; margin-inline: auto; }
 
-.hero-stage { position: relative; width: min(520px, 86%); margin: 30px auto 46px; }
+.hero-stage { position: relative; width: min(640px, 90%); margin: 30px auto 50px; }
 .hero-logo-card {
   background: var(--cream-2);
   border: 4px solid var(--ink);
@@ -397,7 +397,7 @@ img { max-width: 100%; display: block; }
   .product-card.feature { grid-column: span 2; }
 }
 @media (max-width: 720px) {
-  .hero-stage { width: min(360px, 78%); margin: 22px auto 40px; }
+  .hero-stage { width: min(420px, 88%); margin: 22px auto 40px; }
   .squish-bubble { width: 84px; height: 84px; }
   .sb1 { top: -26px; left: -26px; } .sb2 { top: -22px; right: -28px; }
   .sb3, .sb4 { display: none; }
