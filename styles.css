@@ -216,15 +216,17 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Value props ---------- */
 .angles { background: var(--paper); padding: 54px 0; border-bottom: 3px solid var(--ink); }
-.value-props { display: grid; grid-template-columns: repeat(3, 1fr); }
-.value-prop { position: relative; text-align: center; padding: 6px 26px; }
-.value-prop + .value-prop::before { content: ''; position: absolute; left: 0; top: 12%; bottom: 12%; border-left: 2.5px dashed rgba(42,30,22,.22); }
-.vp-emoji { display: block; font-size: 2.7rem; line-height: 1; margin-bottom: 12px; }
-.value-prop h3 { font-size: 1.5rem; margin-bottom: 8px; }
-.value-prop:nth-child(1) h3 { color: var(--teal); }
-.value-prop:nth-child(2) h3 { color: var(--orange); }
-.value-prop:nth-child(3) h3 { color: var(--green); }
-.value-prop p { color: var(--ink-soft); max-width: 30ch; margin-inline: auto; }
+.value-props { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 30px; }
+.value-prop { display: flex; align-items: flex-start; gap: 16px; text-align: left; }
+.vp-emoji { flex-shrink: 0; width: 64px; height: 64px; display: grid; place-items: center; font-size: 1.95rem; border-radius: 50%; }
+.value-prop:nth-child(1) .vp-emoji { background: #cfe9ec; }
+.value-prop:nth-child(2) .vp-emoji { background: #fbe0cd; }
+.value-prop:nth-child(3) .vp-emoji { background: #e2efd2; }
+.vp-text h3 { font-size: 1.3rem; margin-bottom: 4px; }
+.value-prop:nth-child(1) .vp-text h3 { color: var(--teal); }
+.value-prop:nth-child(2) .vp-text h3 { color: var(--orange); }
+.value-prop:nth-child(3) .vp-text h3 { color: var(--green); }
+.vp-text p { color: var(--ink-soft); }
 
 /* ---------- How ---------- */
 .how { padding: 72px 0; }
@@ -391,9 +393,7 @@ img { max-width: 100%; display: block; }
   .angles, .how, .inside, .pricing, .parties, .founders, .waitlist, .faq { padding-top: 42px; padding-bottom: 42px; }
   .charity { padding-top: 38px; padding-bottom: 38px; }
   .section-head { margin-bottom: 28px; }
-  .value-props { grid-template-columns: 1fr; gap: 4px; }
-  .value-prop { padding: 22px 14px; }
-  .value-prop + .value-prop::before { left: 18%; right: 18%; top: 0; bottom: auto; border-left: none; border-top: 2.5px dashed rgba(42,30,22,.22); }
+  .value-props { grid-template-columns: 1fr; gap: 22px; max-width: 480px; margin-inline: auto; }
 }
 @media (max-width: 560px) {
   .plan-grid { grid-template-columns: 1fr; }
