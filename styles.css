@@ -287,9 +287,9 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Pricing ---------- */
 .pricing { padding: 72px 0; }
-.value-callout { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 18px; width: fit-content; max-width: 100%; margin: 0 auto 30px; background: var(--paper); border: 3px solid var(--ink); border-radius: 999px; padding: 12px 28px; box-shadow: var(--shadow-sm); font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; }
-.value-callout b { font-family: var(--font-display); font-weight: 400; color: var(--red); font-size: 1.3rem; }
-.value-callout .vc-divider { width: 2px; height: 26px; background: var(--ink); opacity: .25; }
+.value-callout { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 16px; max-width: 100%; margin: 6px auto 0; font-family: var(--font-head); font-weight: 700; font-size: 1.06rem; color: var(--ink-soft); }
+.value-callout b { font-family: var(--font-display); font-weight: 400; color: var(--red); font-size: 1.35rem; }
+.value-callout .vc-divider { width: 2px; height: 22px; background: var(--ink); opacity: .22; }
 .delivery-toggle { display: inline-flex; gap: 6px; background: var(--paper); border: 3px solid var(--ink); border-radius: 999px; padding: 6px; box-shadow: var(--shadow-sm); margin: 0 auto 40px; position: relative; left: 50%; transform: translateX(-50%); }
 .toggle-btn { font-family: var(--font-head); font-weight: 600; border: none; background: transparent; padding: 10px 22px; border-radius: 999px; cursor: pointer; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; }
 .toggle-btn.active { background: var(--teal); color: var(--paper); }
