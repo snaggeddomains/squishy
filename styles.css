@@ -60,12 +60,18 @@ img { max-width: 100%; display: block; }
 /* ---------- Wordmark ---------- */
 .brand-wordmark {
   font-family: var(--font-display);
-  font-size: 1.72rem;
+  font-size: 1.7rem;
   line-height: 1;
-  letter-spacing: .01em;
+  letter-spacing: .015em;
+  text-transform: uppercase;
   display: inline-flex;
 }
-.brand-wordmark b { font-weight: 400; text-shadow: 1.5px 1.5px 0 rgba(42,30,22,.22); }
+.brand-wordmark b {
+  font-weight: 400;
+  -webkit-text-stroke: 2px var(--ink);
+  paint-order: stroke fill;
+  text-shadow: 2px 2px 0 rgba(42,30,22,.28);
+}
 .brand-wordmark.small { font-size: 1.5rem; }
 
 /* ---------- Eyebrow ---------- */
@@ -104,26 +110,6 @@ img { max-width: 100%; display: block; }
 .btn-ghost { background: var(--paper); color: var(--ink); }
 .btn-lg { padding: 15px 30px; font-size: 1.12rem; }
 .btn-sm { padding: 9px 18px; font-size: 0.92rem; }
-
-/* ---------- Starburst badge ---------- */
-.burst {
-  position: relative;
-  width: 112px; height: 112px;
-  display: grid; place-items: center;
-  text-align: center;
-  color: var(--ink);
-  transform: rotate(-8deg);
-  filter: drop-shadow(4px 4px 0 var(--ink));
-}
-.burst::before, .burst::after {
-  content: ''; position: absolute; inset: 0;
-  background: var(--yellow);
-  border-radius: 16px;
-}
-.burst::after { transform: rotate(45deg); }
-.burst b, .burst i { position: relative; z-index: 2; }
-.burst b { font-family: var(--font-display); font-size: 1.7rem; line-height: 1; }
-.burst i { font-style: normal; font-weight: 800; font-size: .6rem; text-transform: uppercase; letter-spacing: .04em; margin-top: 2px; }
 
 /* ---------- Announcement marquee ---------- */
 .announcement { background: var(--ink); color: var(--cream); overflow: hidden; white-space: nowrap; }
@@ -200,15 +186,13 @@ img { max-width: 100%; display: block; }
 .sb4 { bottom: -44px; right: -30px; transform: rotate(-5deg); animation-delay: 1.6s; }
 @keyframes bob { 0%,100% { translate: 0 0; } 50% { translate: 0 -9px; } }
 
-.hero-burst { position: absolute; bottom: -30px; right: -6px; z-index: 4; width: 96px; height: 96px; }
-.hero-burst b { font-size: 1.5rem; }
-
 .hero-tagline { font-family: var(--font-display); font-weight: 400; font-size: clamp(2.6rem, 6vw, 4.4rem); letter-spacing: 0; }
 .lede { font-size: 1.18rem; max-width: 40ch; margin: 16px auto 0; color: var(--ink-soft); }
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin: 26px 0 22px; }
 .hero-trust { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center; }
 .price-chip { font-family: var(--font-display); font-size: 1.4rem; background: var(--yellow); border: 3px solid var(--ink); border-radius: 16px; padding: 6px 16px; box-shadow: var(--shadow-sm); }
 .price-chip span { font-size: .72rem; }
+.value-chip { font-family: var(--font-display); font-size: 1.02rem; background: var(--green); color: var(--paper); border: 3px solid var(--ink); border-radius: 16px; padding: 9px 15px; box-shadow: var(--shadow-sm); }
 .trust-text { font-weight: 700; color: var(--ink-soft); font-size: .95rem; }
 
 /* ---------- Dividers ---------- */
@@ -408,7 +392,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Footer ---------- */
 .site-footer { background: var(--ink); color: var(--cream); padding: 52px 0 32px; }
 .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; align-items: start; }
-.footer-brand .brand-wordmark b { text-shadow: none; }
+.footer-brand .brand-wordmark b { -webkit-text-stroke-color: var(--cream); text-shadow: 2px 2px 0 rgba(0,0,0,.45); }
 .footer-brand p { margin-top: 12px; color: #d8c9a8; font-size: .95rem; }
 .footer-nav { display: grid; gap: 10px; }
 .footer-nav a { font-family: var(--font-head); font-weight: 600; }
@@ -433,8 +417,6 @@ img { max-width: 100%; display: block; }
   .squish-bubble { width: 84px; height: 84px; }
   .sb1 { top: -26px; left: -26px; } .sb2 { top: -22px; right: -28px; }
   .sb3, .sb4 { display: none; }
-  .hero-burst { width: 80px; height: 80px; bottom: -24px; right: -8px; }
-  .hero-burst b { font-size: 1.2rem; }
   .plan-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
