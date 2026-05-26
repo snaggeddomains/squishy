@@ -144,7 +144,7 @@ img { max-width: 100%; display: block; }
 .hero { position: relative; overflow: hidden; padding: 56px 0 96px; background: linear-gradient(180deg, var(--cream-2), var(--cream)); }
 .hero-rainbow {
   position: absolute; left: 50%; top: 4%; transform: translateX(-50%);
-  width: 780px; height: 780px; max-width: 150vw; border-radius: 50%;
+  width: 900px; height: 900px; max-width: 150vw; border-radius: 50%;
   background: radial-gradient(circle,
     transparent 0 26%,
     var(--purple) 26% 31%,
@@ -160,9 +160,9 @@ img { max-width: 100%; display: block; }
 .hero-rainbow.small { top: -120%; opacity: .22; width: 620px; height: 620px; }
 .hero-grain { position: absolute; inset: 0; z-index: 0; pointer-events: none;
   background-image: radial-gradient(var(--ink) 0.5px, transparent 0.7px); background-size: 20px 20px; opacity: .05; }
-.hero-inner { position: relative; z-index: 1; text-align: center; max-width: 780px; margin-inline: auto; }
+.hero-inner { position: relative; z-index: 1; text-align: center; max-width: 960px; margin-inline: auto; }
 
-.hero-stage { position: relative; width: min(640px, 90%); margin: 30px auto 50px; }
+.hero-stage { position: relative; width: min(800px, 86%); margin: 30px auto 54px; }
 .hero-logo-card {
   background: var(--cream-2);
   border: 4px solid var(--ink);
@@ -176,7 +176,7 @@ img { max-width: 100%; display: block; }
 .hero-logo-card.logo-missing::after { content: 'SomaSquish'; font-family: var(--font-display); font-size: 2rem; color: var(--red); }
 
 .squish-bubble {
-  position: absolute; width: 116px; height: 116px; border-radius: 50%;
+  position: absolute; width: 130px; height: 130px; border-radius: 50%;
   border: 4px solid var(--ink); overflow: hidden; background: var(--cream);
   box-shadow: var(--shadow); z-index: 3;
   animation: bob 4s ease-in-out infinite;
@@ -397,7 +397,7 @@ img { max-width: 100%; display: block; }
   .product-card.feature { grid-column: span 2; }
 }
 @media (max-width: 720px) {
-  .hero-stage { width: min(420px, 88%); margin: 22px auto 40px; }
+  .hero-stage { width: min(480px, 92%); margin: 22px auto 40px; }
   .squish-bubble { width: 84px; height: 84px; }
   .sb1 { top: -26px; left: -26px; } .sb2 { top: -22px; right: -28px; }
   .sb3, .sb4 { display: none; }
