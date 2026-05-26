@@ -389,6 +389,8 @@ img { max-width: 100%; display: block; }
   .nav-toggle { display: flex; margin-left: auto; }
   .angle-grid, .steps, .box-contents { grid-template-columns: 1fr; }
   .party-inner { grid-template-columns: 1fr; }
+  .party-copy { text-align: center; }
+  .party-copy p { margin-inline: auto; }
   .founder-layout { grid-template-columns: 1fr; }
   .founder-strip { grid-template-columns: repeat(3, 1fr); }
   .product-gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
